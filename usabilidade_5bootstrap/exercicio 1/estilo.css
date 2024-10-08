@@ -1,0 +1,31 @@
+.table-hover tbody tr:hover {
+    background-color: #e0f7fa; 
+    color: #ff5733;
+    font-size: 1.1em; 
+}
+
+.table td {
+    cursor: pointer; 
+}
+
+.table thead th {
+    background-color: #343a40; 
+    color: white; 
+}
+
+.table-danger {
+    background-color: #f44336; 
+    color: white; 
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa; 
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #e9ecef; 
+}
+
+.table tfoot tr {
+    font-weight: bold; 
+}

@@ -1,0 +1,29 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+h1 {
+    color: #ff4500;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+.img-fluid {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 0;
+    margin-top: 30px;
+}

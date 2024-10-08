@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Interativa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Notas dos Alunos</h1>
+        <table class="table table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Nome do Aluno</th>
+                    <th>Nota P1</th>
+                    <th>Nota P2</th>
+                    <th>Nota T1</th>
+                    <th>Nota Total</th>
+                    <th>Faltas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr onclick="mostrarMensagem('Ana')">
+                    <td>Ana</td>
+                    <td onclick="mostrarNota('Nota P1: 29')">29</td>
+                    <td onclick="mostrarNota('Nota P2: 17')">17</td>
+                    <td onclick="mostrarNota('Nota T1: 27')">27</td>
+                    <td onclick="mostrarNota('Nota Total: 73')">73</td>
+                    <td onclick="mostrarNota('Faltas: 0')">0</td>
+                </tr>
+                <tr onclick="mostrarMensagem('Gisele')">
+                    <td>Gisele</td>
+                    <td onclick="mostrarNota('Nota P1: 28')">28</td>
+                    <td onclick="mostrarNota('Nota P2: 18')">18</td>
+                    <td onclick="mostrarNota('Nota T1: 24')">24</td>
+                    <td onclick="mostrarNota('Nota Total: 70')">70</td>
+                    <td onclick="mostrarNota('Faltas: 3')">3</td>
+                </tr>
+                <tr onclick="mostrarMensagem('Jane')">
+                    <td>Jane</td>
+                    <td onclick="mostrarNota('Nota P1: 26')">26</td>
+                    <td onclick="mostrarNota('Nota P2: 20')">20</td>
+                    <td onclick="mostrarNota('Nota T1: 24')">24</td>
+                    <td onclick="mostrarNota('Nota Total: 70')">70</td>
+                    <td onclick="mostrarNota('Faltas: 1')">1</td>
+                </tr>
+                <tr onclick="mostrarMensagem('Jorge')">
+                    <td>Jorge</td>
+                    <td onclick="mostrarNota('Nota P1: 25')">25</td>
+                    <td onclick="mostrarNota('Nota P2: 19')">19</td>
+                    <td onclick="mostrarNota('Nota T1: 29')">29</td>
+                    <td onclick="mostrarNota('Nota Total: 73')">73</td>
+                    <td onclick="mostrarNota('Faltas: 0')">0</td>
+                </tr>
+                <tr onclick="mostrarMensagem('Marina')">
+                    <td>Marina</td>
+                    <td onclick="mostrarNota('Nota P1: 30')">30</td>
+                    <td onclick="mostrarNota('Nota P2: 16')">16</td>
+                    <td onclick="mostrarNota('Nota T1: 27')">27</td>
+                    <td onclick="mostrarNota('Nota Total: 73')">73</td>
+                    <td onclick="mostrarNota('Faltas: 1')">1</td>
+                </tr>
+                <tr class="table-danger">
+                    <td>Média</td>
+                    <td colspan="5" id="media">71,8</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="tabela.js"></script>
+</body>
+</html>
