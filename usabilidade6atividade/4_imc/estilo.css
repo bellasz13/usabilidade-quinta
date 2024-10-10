@@ -1,0 +1,19 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h2 {
+    color: #007bff;
+}
+
+.result {
+    text-align: center;
+}
+
+#imcResultado {
+    font-weight: bold;
+}
+
+#imcSituacao {
+    font-size: 1.2em;
+}

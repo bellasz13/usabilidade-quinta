@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Preço de Produtos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Consulta de Preço de Produtos</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="produtoForm">
+                    <div class="form-group">
+                        <label for="codigoProduto">Código do Produto:</label>
+                        <input type="number" class="form-control" id="codigoProduto" placeholder="Insira o código do produto (1 a 5)" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Consultar</button>
+                </form>
+                <div class="result mt-4">
+                    <h4 id="nomeProduto"></h4>
+                    <p id="precoProduto"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="funcoes.js"></script>
+</body>
+</html>

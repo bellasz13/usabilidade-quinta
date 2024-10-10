@@ -1,0 +1,20 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h2 {
+    color: #007bff;
+}
+
+.result {
+    text-align: center;
+}
+
+#nomeColaborador {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#valorBruto {
+    font-size: 1.2em;
+}

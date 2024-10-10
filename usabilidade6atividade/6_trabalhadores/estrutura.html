@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Folha de Pagamento</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Gerenciamento de Folha de Pagamento</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="folhaPagamentoForm">
+                    <div class="form-group">
+                        <label for="codigoColaborador">Código do Colaborador:</label>
+                        <input type="number" class="form-control" id="codigoColaborador" placeholder="Insira o código do colaborador (1 a 5)" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="horasTrabalhadas">Horas Trabalhadas:</label>
+                        <input type="number" class="form-control" id="horasTrabalhadas" placeholder="Insira as horas trabalhadas" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Calcular Pagamento</button>
+                </form>
+                <div class="result mt-4">
+                    <h4 id="nomeColaborador"></h4>
+                    <p id="valorBruto"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="funcoes.js"></script>
+</body>
+</html>

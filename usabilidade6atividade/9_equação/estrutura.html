@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolução de Equações de Segundo Grau</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Resolução de Equações de Segundo Grau</h2>
+        <form id="equacaoForm" class="mb-3">
+            <div class="mb-3">
+                <label for="coeficienteA" class="form-label">Coeficiente a:</label>
+                <input type="number" class="form-control" id="coeficienteA" placeholder="Digite o valor de a">
+            </div>
+            <div class="mb-3">
+                <label for="coeficienteB" class="form-label">Coeficiente b:</label>
+                <input type="number" class="form-control" id="coeficienteB" placeholder="Digite o valor de b">
+            </div>
+            <div class="mb-3">
+                <label for="coeficienteC" class="form-label">Coeficiente c:</label>
+                <input type="number" class="form-control" id="coeficienteC" placeholder="Digite o valor de c">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="calcularEquacao()">Resolver</button>
+        </form>
+
+        <h3 class="text-center">Resultado</h3>
+        <div id="resultado" class="alert alert-info" role="alert"></div>
+    </div>
+
+    <script src="funcoes.js"></script>
+</body>
+</html>
